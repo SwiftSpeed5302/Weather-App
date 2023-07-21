@@ -1,0 +1,119 @@
+:root {
+  --section-overlay: rgba(0, 0, 0, 0.7);
+  --background-overlay: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  transition: 0.4s all ease;
+}
+
+.overlay {
+  background-color: var(--background-overlay);
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  /* max-width: 800px; */
+  /* margin: auto; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* TOP */
+.section {
+  /* width: 100%; */
+  display: flex;
+  padding: 1rem;
+  color: white;
+  border-radius: 0.4rem;
+  background-color: var(--section-overlay);
+}
+
+
+.searchForm {
+  background-color: white;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+  padding: 4px;
+}
+
+.searchForm > input {
+  background-color: transparent;
+  padding: 0.4rem;
+  border: solid 0.8px white;
+  border-radius: 0.4rem;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.searchForm > input:focus {
+  outline: none;
+}
+
+.searchButton {
+  border: none;
+  padding: 5px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  background-color: #1f1f1f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.searchButton:hover{
+  transform: scale(1.1);
+}
+
+.tempButton {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.tempButton:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.section__temperature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+.icon > h3 {
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.temperature > h1 {
+  font-size: 50px;
+}
